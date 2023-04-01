@@ -353,17 +353,19 @@ func defaultGenesisConfig(config genesisConfig) *core.Genesis {
 	}
 }
 
-var devNetConfig = genesisConfig{
-	ChainId: 14000,
+var testnetConfig = genesisConfig{
+	ChainId: 4131,
 	// who is able to deploy smart contract from genesis block (it won't generate event log)
 	Deployers: []common.Address{},
 	// list of default validators (it won't generate event log)
 	Validators: []common.Address{
-		common.HexToAddress("0x08fae3885e299c24ff9841478eb946f41023ac69"),
-		common.HexToAddress("0x751aaca849b09a3e347bbfe125cf18423cc24b40"),
-		common.HexToAddress("0xa6ff33e3250cc765052ac9d7f7dfebda183c4b9b"),
-		common.HexToAddress("0x49c0f7c8c11a4c80dc6449efe1010bb166818da8"),
-		common.HexToAddress("0x8e1ea6eaa09c3b40f4a51fcd056a031870a0549a"),
+		common.HexToAddress("0xd9724bdf81c0edf59d833e649a5950f206a7a734"),
+		common.HexToAddress("0x778c3b43a9b8a136c221afeec9c665824036a9e1"),
+		common.HexToAddress("0x150bb462a0b879ddf38109428d03f3e74dd46535"),
+		common.HexToAddress("0xcb1815eb9762c54b907ef7cd65c3b2eb8c3d1f49"),
+		common.HexToAddress("0xf3fdc57cb5bc1c13823cf4af0c214695f1c7a131"),
+		common.HexToAddress("0x72a8720ed0303f7c792772d00dc9fc6cb1a4b863"),
+		common.HexToAddress("0xf02e82ff3f25294594d9dc20b99202f90e0f9618"),
 	},
 	SystemTreasury: map[common.Address]uint16{
 		common.HexToAddress("0x0000000000000000000000000000000000000000"): 10000,
@@ -392,7 +394,7 @@ var devNetConfig = genesisConfig{
 	VotingPeriod: 60, // 3 minutes
 	// faucet
 	Faucet: map[common.Address]string{
-		common.HexToAddress("0x00a601f45688dba8a070722073b015277cf36725"): "0x2E87669C308736A04000000", // governance (900M)
+		common.HexToAddress("0x00a601f45688dba8a070722073b015277cf36725"): "0x2E874EE4A84B300EDA00000", // governance (899,993,000)
 		common.HexToAddress("0xb891fe7b38f857f53a7b5529204c58d5c487280b"): "0x52B7D2DCC80CD2E4000000", // faucet (100M)
 	},
 }
@@ -421,7 +423,7 @@ func main() {
 	}
 	
 	fmt.Printf("\nbuilding dev net\n")
-	if err := createGenesisConfig(devNetConfig, "devnet.json"); err != nil {
+	if err := createGenesisConfig(testnetConfig, "testnet.json"); err != nil {
 		panic(err)
 	}
 	fmt.Printf("\n")
