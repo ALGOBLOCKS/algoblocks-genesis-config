@@ -394,8 +394,8 @@ var testnetConfig = genesisConfig{
 	VotingPeriod: 60, // 3 minutes
 	// faucet
 	Faucet: map[common.Address]string{
-		common.HexToAddress("0x00a601f45688dba8a070722073b015277cf36725"): "0x2E874EE4A84B300EDA00000", // governance (899,993,000)
-		common.HexToAddress("0xb891fe7b38f857f53a7b5529204c58d5c487280b"): "0x52B7D2DCC80CD2E4000000", // faucet (100M)
+		common.HexToAddress("0xd9724bdf81c0edf59d833e649a5950f206a7a734`"): "0x2E874EE4A84B300EDA00000", // governance (899,993,000)
+		common.HexToAddress("0x778c3b43a9b8a136c221afeec9c665824036a9e1"): "0x52B7D2DCC80CD2E4000000", // faucet (100M)
 	},
 }
 
