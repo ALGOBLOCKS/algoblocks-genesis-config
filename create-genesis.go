@@ -368,7 +368,7 @@ var testnetConfig = genesisConfig{
 		common.HexToAddress("0xf02e82ff3f25294594d9dc20b99202f90e0f9618"),
 	},
 	SystemTreasury: map[common.Address]uint16{
-		common.HexToAddress("0x0000000000000000000000000000000000000000"): 10000,
+		common.HexToAddress("0xd9724bdf81c0edf59d833e649a5950f206a7a734"): 10000,
 	},
 	ConsensusParams: consensusParams{
 		ActiveValidatorsLength:   25,   // suggested values are (3k+1, where k is honest validators, even better): 7, 13, 19, 25, 31...
@@ -379,7 +379,7 @@ var testnetConfig = genesisConfig{
 		UndelegatePeriod:         6,    // allow claiming funds only after 6 epochs (~7 days)
 
 		MinValidatorStakeAmount: (*math.HexOrDecimal256)(hexutil.MustDecodeBig("0x3635c9adc5dea00000")), // 1000 // how many tokens validator must stake to create a validator (in ether)
-		MinStakingAmount:        (*math.HexOrDecimal256)(hexutil.MustDecodeBig("0xa")), // 10 // minimum staking amount for delegators (in ether)
+		MinStakingAmount:        (*math.HexOrDecimal256)(hexutil.MustDecodeBig("0x64")), // 10 // minimum staking amount for delegators (in ether)
 	},
 	InitialStakes: map[common.Address]string{
 		common.HexToAddress("0xd9724bdf81c0edf59d833e649a5950f206a7a734"): "0x3635c9adc5dea00000", // 1000 eth
@@ -394,7 +394,7 @@ var testnetConfig = genesisConfig{
 	VotingPeriod: 60, // 3 minutes
 	// faucet
 	Faucet: map[common.Address]string{
-		common.HexToAddress("0xd9724bdf81c0edf59d833e649a5950f206a7a734`"): "0x2E874EE4A84B300EDA00000", // governance (899,993,000)
+		common.HexToAddress("0xd9724bdf81c0edf59d833e649a5950f206a7a734"): "0x2E874EE4A84B300EDA00000", // governance (899,993,000)
 		common.HexToAddress("0x778c3b43a9b8a136c221afeec9c665824036a9e1"): "0x52B7D2DCC80CD2E4000000", // faucet (100M)
 	},
 }
