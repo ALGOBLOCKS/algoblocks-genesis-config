@@ -368,7 +368,7 @@ var testnetConfig = genesisConfig{
 		common.HexToAddress("0xf02e82ff3f25294594d9dc20b99202f90e0f9618"),
 	},
 	SystemTreasury: map[common.Address]uint16{
-		common.HexToAddress("0xd9724bdf81c0edf59d833e649a5950f206a7a734"): 10000,
+		common.HexToAddress("0x55405f4c03e9649f092ebe874753eab47d1e6af4"): 10000,
 	},
 	ConsensusParams: consensusParams{
 		ActiveValidatorsLength:   25,   // suggested values are (3k+1, where k is honest validators, even better): 7, 13, 19, 25, 31...
