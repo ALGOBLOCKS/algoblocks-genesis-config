@@ -10,3 +10,4 @@ coverage.json
 keystore/
 devnet.json
 testnet.json
+password.txt
