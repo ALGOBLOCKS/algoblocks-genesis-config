@@ -359,13 +359,13 @@ var testnetConfig = genesisConfig{
 	Deployers: []common.Address{},
 	// list of default validators (it won't generate event log)
 	Validators: []common.Address{
-		common.HexToAddress("0xd9724bdf81c0edf59d833e649a5950f206a7a734"),
-		common.HexToAddress("0x778c3b43a9b8a136c221afeec9c665824036a9e1"),
-		common.HexToAddress("0x150bb462a0b879ddf38109428d03f3e74dd46535"),
-		common.HexToAddress("0xcb1815eb9762c54b907ef7cd65c3b2eb8c3d1f49"),
-		common.HexToAddress("0xf3fdc57cb5bc1c13823cf4af0c214695f1c7a131"),
-		common.HexToAddress("0x72a8720ed0303f7c792772d00dc9fc6cb1a4b863"),
-		common.HexToAddress("0xf02e82ff3f25294594d9dc20b99202f90e0f9618"),
+		common.HexToAddress("0x43e063cebd504b63714864daf794b4b827406849"),
+		common.HexToAddress("0x13708d393c0a3b4c305a2e5be5b21f5c32e58430"),
+		common.HexToAddress("0x9b9a3c634a89c274d0aef028714e6ec84c042c9f"),
+		common.HexToAddress("0xcf59c76188e8beb931b7664e6a4c951b16755b4e"),
+		common.HexToAddress("0x8ba785c242802b977b5d17623a387489e313922b"),
+		common.HexToAddress("0x961b82441e5566474720287479486dda962e7eb6"),
+		common.HexToAddress("0x01dcd7275188105bfca76370bd570e4200f87781"),
 	},
 	SystemTreasury: map[common.Address]uint16{
 		common.HexToAddress("0x55405f4c03e9649f092ebe874753eab47d1e6af4"): 10000,
@@ -382,20 +382,20 @@ var testnetConfig = genesisConfig{
 		MinStakingAmount:        (*math.HexOrDecimal256)(hexutil.MustDecodeBig("0x64")), // 10 // minimum staking amount for delegators (in ether)
 	},
 	InitialStakes: map[common.Address]string{
-		common.HexToAddress("0xd9724bdf81c0edf59d833e649a5950f206a7a734"): "0x3635c9adc5dea00000", // 1000 eth
-		common.HexToAddress("0x778c3b43a9b8a136c221afeec9c665824036a9e1"): "0x3635c9adc5dea00000", // 1000 eth
-		common.HexToAddress("0x150bb462a0b879ddf38109428d03f3e74dd46535"): "0x3635c9adc5dea00000", // 1000 eth
-		common.HexToAddress("0xcb1815eb9762c54b907ef7cd65c3b2eb8c3d1f49"): "0x3635c9adc5dea00000", // 1000 eth
-		common.HexToAddress("0xf3fdc57cb5bc1c13823cf4af0c214695f1c7a131"): "0x3635c9adc5dea00000", // 1000 eth
-		common.HexToAddress("0x72a8720ed0303f7c792772d00dc9fc6cb1a4b863"): "0x3635c9adc5dea00000", // 1000 eth
-		common.HexToAddress("0xf02e82ff3f25294594d9dc20b99202f90e0f9618"): "0x3635c9adc5dea00000", // 1000 eth
+		common.HexToAddress("0x43e063cebd504b63714864daf794b4b827406849"): "0x3635c9adc5dea00000", // 1000 eth
+		common.HexToAddress("0x13708d393c0a3b4c305a2e5be5b21f5c32e58430"): "0x3635c9adc5dea00000", // 1000 eth
+		common.HexToAddress("0x9b9a3c634a89c274d0aef028714e6ec84c042c9f"): "0x3635c9adc5dea00000", // 1000 eth
+		common.HexToAddress("0xcf59c76188e8beb931b7664e6a4c951b16755b4e"): "0x3635c9adc5dea00000", // 1000 eth
+		common.HexToAddress("0x8ba785c242802b977b5d17623a387489e313922b"): "0x3635c9adc5dea00000", // 1000 eth
+		common.HexToAddress("0x961b82441e5566474720287479486dda962e7eb6"): "0x3635c9adc5dea00000", // 1000 eth
+		common.HexToAddress("0x01dcd7275188105bfca76370bd570e4200f87781"): "0x3635c9adc5dea00000", // 1000 eth
 	},
 	// owner of the governance
 	VotingPeriod: 60, // 3 minutes
 	// faucet
 	Faucet: map[common.Address]string{
-		common.HexToAddress("0xd9724bdf81c0edf59d833e649a5950f206a7a734"): "0x2E874EE4A84B300EDA00000", // governance (899,993,000)
-		common.HexToAddress("0x778c3b43a9b8a136c221afeec9c665824036a9e1"): "0x52B7D2DCC80CD2E4000000", // faucet (100M)
+		common.HexToAddress("0x43e063cebd504b63714864daf794b4b827406849"): "0x2E874EE4A84B300EDA00000", // governance (899,993,000)
+		common.HexToAddress("0x13708d393c0a3b4c305a2e5be5b21f5c32e58430"): "0x52B7D2DCC80CD2E4000000", // faucet (100M)
 	},
 }
 
